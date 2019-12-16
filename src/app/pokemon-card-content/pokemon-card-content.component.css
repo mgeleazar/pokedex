@@ -1,0 +1,15 @@
+.types {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.mat-card {
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+}
+
+p {
+  font-weight: bold;
+}

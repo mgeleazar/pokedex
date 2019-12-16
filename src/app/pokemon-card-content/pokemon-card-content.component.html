@@ -1,0 +1,14 @@
+<div *ngIf="pokemonDetails">
+  <mat-card (click)="showPokemonDetails(pokemonDetails)">
+    <mat-card-content>
+      <p>{{ pokemonDetails.name | uppercase }}</p>
+      <img src="{{ pokemonDetails.sprites.front_default }}">
+      <p>ID: {{ pokemonDetails.id }}</p>
+      <div class="types">
+        <p *ngFor="let type of pokemonDetails.types" [class]="type.type.name">
+          {{ type.type.name | uppercase }}
+        </p>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

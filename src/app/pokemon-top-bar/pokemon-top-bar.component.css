@@ -1,0 +1,22 @@
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mat-form-field {
+  margin: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .mat-toolbar {
+    height: 250%;
+    display: block;
+  }
+}

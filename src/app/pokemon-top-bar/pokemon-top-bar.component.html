@@ -1,0 +1,19 @@
+<div *ngIf="typeList">
+  <mat-toolbar color="primary">
+    <img src="https://cdn.bulbagarden.net/upload/4/4b/Pok%C3%A9dex_logo.png" height="50px">
+    <div id="search-options">
+      <mat-form-field floatLabel="never">
+        <input matInput placeholder="Search Pokemon..." [formControl]="searchVal" (ngModelChange)="searchChanged()">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Filter Pokemon by Type</mat-label>
+        <mat-select [(value)]="selected" (selectionChange)="changeType()">
+          <mat-option value="">NONE</mat-option>
+          <mat-option *ngFor="let type of typeList.results" value="{{type.url}}">
+             {{ type.name | uppercase }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </mat-toolbar>
+</div>

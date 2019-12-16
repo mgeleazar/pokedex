@@ -1,0 +1,23 @@
+<div *ngIf="pokemonDetails">
+  <mat-dialog-content class="details">
+    <div class="firstDiv">
+      <img src="{{ pokemonDetails.sprites.front_default }}" width="200px">
+      <p><b>ID: {{ pokemonDetails.id }}</b></p>
+      <p><b>{{ pokemonDetails.name | uppercase }}</b></p>
+      <p><b>TYPES: <span *ngFor="let type of pokemonDetails.types" [class]="type.type.name">
+        {{ type.type.name | uppercase }}</span></b>
+      </p>
+    </div>
+    <div class="secondDiv">
+      <p><span>Height(in decimeters): </span>{{ pokemonDetails.height }}</p>
+      <p><span>Weight(in hectograms): </span>{{ pokemonDetails.weight }}</p>
+      <mat-divider></mat-divider>
+      <p *ngFor="let stat of pokemonDetails.stats">
+        {{ stat.stat.name | uppercase }}<span>: </span>{{ stat.base_stat }}
+      </p>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-raised-button class="close" (click)="closeDialog()" color="accent">Close</button>
+  </mat-dialog-actions>
+</div>

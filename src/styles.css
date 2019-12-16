@@ -1,0 +1,91 @@
+.container {
+  padding: 8px 16px;
+}
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Pokemon Types Text Design */
+.normal {
+  color: #a8a77a;
+}
+
+.fighting {
+  color: #c22e28;
+}
+
+.flying {
+  color: #a98ff3;
+}
+
+.poison {
+  color: #a33ea1;
+}
+
+.ground {
+  color: #e2bf65;
+}
+
+.rock {
+  color: #b6a136;
+}
+
+.bug {
+  color: #a6b91a;
+}
+
+.ghost {
+  color: #735797;
+}
+
+.steel {
+  color: #b7b7ce;
+}
+
+.fire {
+  color: #ee8130;
+}
+
+.water {
+  color: #6390f0;
+}
+
+.grass {
+  color: #7ac74c;
+}
+
+.electric {
+  color: #f7d02c;
+}
+
+.psychic {
+  color: #f95587;
+}
+
+.ice {
+  color: #96d9d6;
+}
+
+.dragon {
+  color: #6f35fc;
+}
+
+.dark {
+  color: #705746;
+}
+
+.fairy {
+  color: #d685ad;
+}
+
+.unknown {
+  color: #68a090;
+}
+
+.shadow {
+  color: purple;
+}

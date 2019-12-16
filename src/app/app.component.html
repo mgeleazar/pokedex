@@ -1,0 +1,3 @@
+<app-pokemon-top-bar (typeSelected)="typeSelected($event)" (searchValue)="searchChanged($event)"></app-pokemon-top-bar>
+
+<app-pokemon-list class="container" [typesUrl]="typeUrl" [searchInput]="searchText"></app-pokemon-list>

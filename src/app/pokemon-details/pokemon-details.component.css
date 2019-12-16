@@ -1,0 +1,21 @@
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.firstDiv {
+  text-align: center;
+  padding: 12px;
+  align-items: center;
+}
+
+.secondDiv {
+  padding: 12px;
+}
+
+@media only screen and (max-width: 767px) {
+  .details {
+    display: block;
+  }
+}
